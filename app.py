@@ -7,7 +7,7 @@ def print_username():
     if username:
         print(f"El valor de USERNAME es: {username}")
     else:
-        print("La variable de entorno USERNAME no está definida.") 
+        print("La variable de entorno USERNAME no se encuentra definida.") 
  
 if __name__ == "__main__":
     print_username()
