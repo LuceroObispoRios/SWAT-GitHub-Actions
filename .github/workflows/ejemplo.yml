@@ -20,7 +20,7 @@ jobs:
           echo "${{ secrets.NOGITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Build image
-        run: docker build . --tag $IMAGE_NAME
+        run: docker build --tag $IMAGE_NAME -f test/dockerfile .
 
       - name: Push image
         run: |
